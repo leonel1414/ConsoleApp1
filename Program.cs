@@ -50,6 +50,45 @@ class Program
             Console.WriteLine($"var 1 & var2  = {var1 & var2}");
             Console.WriteLine($"var 1 | var2  = {var1 | var2}");
 
+
+
+            Console.WriteLine("Condicionales");
+            int Var1 = 10;
+            int Var2 = 20;
+            int Var3 = 3;
+
+            Console.WriteLine($"Var1 = {var1}");
+            Console.WriteLine($"Var2 = {var2}");
+            Console.WriteLine($"Var3 = {var3}");
+
+            //if simple
+            if (Var1 == Var2) {
+                Console.WriteLine($"Valor de ambas es el mismo");
+            }
+            //if con else
+            if (Var1 == Var2)
+            {
+                Console.WriteLine($"Valor de ambas es el mismo");
+            }
+            else {
+                Console.WriteLine($"El valor de ambas variables es distinto.");
+            }
+
+            if (Var1 == Var2)
+            {
+                Console.WriteLine("el valor de ambas variables es el mismo");
+            }
+            else {
+                if (Var1 > Var2)
+                {
+                    Console.WriteLine("Var1 > Var2");
+                }
+                else {
+                    Console.WriteLine("Var1 < Var2");
+                }
+                Console.WriteLine();
+            }
         }
     }
+
 }
