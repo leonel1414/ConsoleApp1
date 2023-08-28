@@ -4,7 +4,52 @@ class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("hola mundo");
+            int var1 = 10;
+            int var2 = 100;
+            bool var3 = true;
+            bool var4 = false;
+            int resultado = 0;
+
+            Console.WriteLine("Operadores aritmeticos");
+            Console.WriteLine();
+
+            Console.WriteLine($"Var1 = {var1}");
+            Console.WriteLine($"Var2 = {var2}");
+            Console.WriteLine();
+
+            Console.WriteLine($"var1 + var2 = {var1 + var2}");
+            Console.WriteLine($"var1 - var2 = {var1 - var2}");
+            Console.WriteLine($"var1 * var2 = {var1 * var2}");
+            Console.WriteLine($"var1 / var2 = {var1 / var2}");
+            Console.WriteLine($"var1 % var2 = {var1 % var2}");
+            Console.WriteLine();
+
+            //incrementos
+            var1 = var1 + 1;
+            Console.WriteLine($"var1 + 1 = {var1}");
+
+            var1++; //equivale a la expresion anterior
+            Console.WriteLine($"var1++ = {var1}");
+
+            var1 += 10;//equivale a var1 = var1 + 10
+            Console.WriteLine($"var1 +=10 = {var1}");
+            Console.WriteLine();
+
+             var1 = 10;
+             var2 = 10;
+
+            resultado = var1++;// se asigana var1 a resultado y luego se incrementa var
+            Console.WriteLine($"Resultado = var++; resultado = {resultado}");
+
+            Console.WriteLine($"var 1 == var2  = {var1 == var2}");
+            Console.WriteLine($"var 1 == var2  = {var1 != var2}");
+            Console.WriteLine($"var 1 < var2  = {var1 < var2}");
+            Console.WriteLine($"var 1 <= var2  = {var1 <= var2}");
+            Console.WriteLine($"var 1 > var2  = {var1 > var2}");
+            Console.WriteLine($"var 1 >= var2  = {var1 >= var2}");
+            Console.WriteLine($"var 1 & var2  = {var1 & var2}");
+            Console.WriteLine($"var 1 | var2  = {var1 | var2}");
+
         }
     }
 }
