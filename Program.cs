@@ -1,6 +1,7 @@
 ﻿using System;
-namespace ConsoleApp1 { 
-class Program
+namespace ConsoleApp1
+{
+    class Program
     {
         static void Main(string[] args)
         {
@@ -35,8 +36,8 @@ class Program
             Console.WriteLine($"var1 +=10 = {var1}");
             Console.WriteLine();
 
-             var1 = 10;
-             var2 = 10;
+            var1 = 10;
+            var2 = 10;
 
             resultado = var1++;// se asigana var1 a resultado y luego se incrementa var
             Console.WriteLine($"Resultado = var++; resultado = {resultado}");
@@ -62,7 +63,8 @@ class Program
             Console.WriteLine($"Var3 = {var3}");
 
             //if simple
-            if (Var1 == Var2) {
+            if (Var1 == Var2)
+            {
                 Console.WriteLine($"Valor de ambas es el mismo");
             }
             //if con else
@@ -70,7 +72,8 @@ class Program
             {
                 Console.WriteLine($"Valor de ambas es el mismo");
             }
-            else {
+            else
+            {
                 Console.WriteLine($"El valor de ambas variables es distinto.");
             }
 
@@ -78,12 +81,14 @@ class Program
             {
                 Console.WriteLine("el valor de ambas variables es el mismo");
             }
-            else {
+            else
+            {
                 if (Var1 > Var2)
                 {
                     Console.WriteLine("Var1 > Var2");
                 }
-                else {
+                else
+                {
                     Console.WriteLine("Var1 < Var2");
                 }
                 Console.WriteLine();
