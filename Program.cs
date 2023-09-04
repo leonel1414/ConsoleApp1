@@ -93,6 +93,57 @@ namespace ConsoleApp1
                 }
                 Console.WriteLine();
             }
+
+            //switch
+            switch (Var3) {
+                case 1:
+                    Console.WriteLine("var3 = primavera.");
+                    break;
+                case 2:
+                    Console.WriteLine("var3 = verano");
+                    break;
+                case 3:
+                    Console.WriteLine("var3 = otoño.");
+                    break;
+                case 4:
+                    Console.WriteLine("var3 = invierno.");
+                    break;
+                default: //si no es ninguno de los indicado arriba
+                    Console.WriteLine("var3 fuera de rango");
+                    break;
+            }
+            Console.WriteLine();
+
+
+
+            //while
+            Console.WriteLine("Bucles");
+            Console.WriteLine();
+
+            int contador = 0;
+            Console.WriteLine("while");
+            Console.WriteLine();
+            while (contador < 10) {
+                Console.WriteLine($"contador = {contador}");
+                contador++;
+            }
+            Console.WriteLine($"Valor final: {contador}");
+
+            //do while
+            Console.WriteLine("do while");
+            Console.WriteLine();
+
+            contador = 0;
+            do {
+                Console.WriteLine($"contador = {contador}");
+                contador = contador + 1;
+            } while (contador <10);
+            Console.WriteLine();
+            Console.WriteLine($"valor final: {contador}");
+
+            //for
+
+
         }
     }
 }
