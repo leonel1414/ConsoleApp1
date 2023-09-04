@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Reflection.Metadata.Ecma335;
+
 namespace ConsoleApp1
 {
     class Program
@@ -142,8 +144,44 @@ namespace ConsoleApp1
             Console.WriteLine($"valor final: {contador}");
 
             //for
+            Console.WriteLine("for");
+            Console.WriteLine();
+
+            for (int Var = 1; Var <= 10; Var++ ) {
+                Console.WriteLine($"var = {Var}");
+            }
+
+            //otro ejemplo
+            for (int Var = 100; Var >=10; Var = Var -10) {
+                Console.WriteLine($"Var = {Var}");
+            }
+            Console.WriteLine();
+            Console.WriteLine("Pulse una tecla para continuar...");
+            Console.ReadLine();
+            Console.Clear();
 
 
+            bool Resultado = false;
+
+            Console.WriteLine("Metodos");
+            Console.WriteLine();
+
+            Resultado = Function();
+            Console.WriteLine($"El metodo 'function' ha devuelto: {Resultado}");
+            Console.WriteLine();
+
+            Console.WriteLine($"La superficie del circulo cuyo radio es de 10cm es: {SuperficieCirculo(10)} cm2.");
+            Console.WriteLine();
+
+            Console.WriteLine("Pulse una tecla para terminar...");
+            Console.WriteLine();
+
+            static bool Function() { 
+            return true;
+            }
+             static double SuperficieCirculo( double paraRadio) {
+                return Math.PI * Math.Pow(paraRadio , 2);
+            }
         }
     }
 }
