@@ -187,13 +187,15 @@ namespace ConsoleApp1
             //{
             //    return Math.PI * Math.Pow(paraRadio, 2);
             //}
-            Auto a1 = new Auto();
-            a1.marca = "ford";
-            a1.modelo = 2001;
+            Auto a1 = new Auto("Fiat",2023);
+           // a1.marca = "ford";
+           // a1.modelo = 2001;
 
             //Console.WriteLine($"Marca: {a1.marca} , Modelo: {a1.modelo}");
             a1.imprimir();
-
+            Console.WriteLine(a1.acelerar());
+            Console.WriteLine(a1.acelerar(25));
+            Console.WriteLine(a1.acelerar(1.1));
         }
 
     }
